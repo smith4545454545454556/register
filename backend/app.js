@@ -4,7 +4,9 @@ import cors from "cors"
 const corsOptions = {
     origin: "https://register-frontend-n2tm.onrender.com", // Allow your frontend
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],  // Allowed HTTP methods
-    allowedHeaders: ["Content-Type", "Authorization"],    // Allowed headers
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,              // Allow sending cookies or Authorization header
+    // Allowed headers
     optionsSuccessStatus: 200,
 };
 const app = express()
