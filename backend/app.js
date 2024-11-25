@@ -10,8 +10,9 @@ const corsOptions = {
     optionsSuccessStatus: 200,
 };
 const app = express()
-app.use(express.json())
 app.use(cors(corsOptions))
+
+app.use(express.json())
 app.options("*", cors(corsOptions));
 
 app.get("/", (req, res) => {
