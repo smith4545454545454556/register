@@ -2,7 +2,7 @@ import express from "express"
 import { router as UserRouter } from "./src/routes/user.js"
 import cors from "cors"
 const corsOptions = {
-    origin: "https://register-frontend-n2tm.onrender.com",
+    origin: "*",
     optionsSuccessStatus: 200
 }
 const app = express()
