@@ -49,9 +49,10 @@ const Form = () => {
         formData.append("password", formState.password)
         formData.append("role", formState.role)
         formData.append("profile", formState.profilePic)
+        console.log(formData, "the form data")
 
 
-        const respone = await handleSubmitForm({ name: "sjfljds" })
+        const respone = await handleSubmitForm(formData)
         console.log(respone, "the backend response")
 
 
