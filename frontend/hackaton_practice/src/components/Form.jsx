@@ -51,7 +51,7 @@ const Form = () => {
         formData.append("profile", formState.profilePic)
 
 
-        const respone = await handleSubmitForm(formData)
+        const respone = await handleSubmitForm({ name: "sjfljds" })
         console.log(respone, "the backend response")
 
 
