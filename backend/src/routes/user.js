@@ -4,3 +4,6 @@ import upload from "../multer/multer.js";
 export const router = Router()
 router.post("/register", upload.single("profile"), UserController.register)
 router.post("/login", UserController.login)
+router.get("/login", (res, req) => {
+    res.send("register")
+})
