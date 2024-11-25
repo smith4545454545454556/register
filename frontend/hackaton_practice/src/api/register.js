@@ -7,6 +7,8 @@ export const handleSubmitForm = async (data) => {
     url: `${baseUrl}/register`,
     method: "POST",
     data: data,
+    withCredentials: true,
+
     headers: {
       "Content-Type": "multipart/form-data"
     }
